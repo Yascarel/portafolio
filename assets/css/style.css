@@ -1,0 +1,67 @@
+:root {
+  font-family: 'Bai Jamjuree', sans-serif;
+  box-sizing: border-box;
+  --font-regular: 400;
+  --font--medium: 500;
+  --font--semi-bold: 600;
+  --font-bold: 700;
+}
+*
+*::after
+*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.body--light {
+--color__secundar: #161616;;
+--color__ligth: hsl(0, 0%, 87%);
+--tex__color: #161616;
+--tex__secundary: hsl(0, 0%, 87%);
+--color__container: hsl(0, 0%, 83%)
+}
+
+.body--dark {
+--color__secundar: hsl(0, 0%, 87%);
+--color__ligth: #161616;
+--tex__color: hsl(0, 0%, 87%);
+--tex__secundary: #161616;
+--color__container: #1c1a1a;
+
+}
+
+.body {
+  max-width: 100%;
+  background-color: var(--color__ligth);
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color__secundar);
+  border-radius: 20px;
+  border: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

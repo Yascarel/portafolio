@@ -1,0 +1,71 @@
+.section--Technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div--Technology {
+  display: flex;
+  column-gap: 20vh;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-right: 15vh;
+}
+
+.article--Technology {
+  width: 5vh;
+  height: 30vh;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.parte--adelante, .parte--atras {
+  width: 20vh;
+  height: 25vh;
+  text-align: center;
+  position: absolute;
+  backface-visibility: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+}
+
+.parte--adelante, .parte--atras:hover {
+  box-shadow: 0 5px 15px var(--color__secundar);
+}
+.parte--adelante[indentidad="html"] {
+  background-color: #e34c26;
+  color: hsl(0, 0%, 87%)
+}
+.parte--adelante[indentidad="css"] {
+  background-color: #2965f1;
+  color: hsl(0, 0%, 87%)
+}
+.parte--adelante[indentidad="js"] {
+  background-color: #c7ad00;
+  color: hsl(0, 0%, 87%)
+}
+.parte--atras {
+  transform: rotateX(-180deg);
+  background-color: var(--color__secundar);
+  color: var(--tex__secundary);
+}
+.article--Technology:hover .parte--adelante {
+  transform: rotateX(180deg);
+}
+.article--Technology:hover .parte--atras {
+  transform: rotateX(0deg);
+}
+
+@media (max-width:430px) {
+  .div--Technology {
+    flex-direction: column;
+  }
+}
+
